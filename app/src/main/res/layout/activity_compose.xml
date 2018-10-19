@@ -1,27 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Compose"
-    android:id="@+id/coordinatorLayout">
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="66dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
 
 
-    <TextView
-        android:id="@+id/textView4"
+<!--need to use snackbar  for the rest.. huhu-->
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="83dp"
-        android:layout_marginLeft="83dp"
-        android:layout_marginTop="168dp"
-        android:text="Compose"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_marginStart="274dp"
+        android:layout_marginLeft="274dp"
+        android:layout_marginTop="483dp"
+        android:text="Add" />
 
+    <!--android:layout_below="@+id/editText"-->
 
-</FrameLayout>
-
+</RelativeLayout>

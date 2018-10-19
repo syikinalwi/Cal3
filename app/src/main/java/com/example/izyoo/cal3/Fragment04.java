@@ -23,11 +23,13 @@ public class Fragment04 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
     View view=inflater.inflate(R.layout.fragment_fragment04, container, false);
 
         viewPager=(ViewPager)view.findViewById(R.id.pager);
         ViewPagerAdapter pagerAdapter=new ViewPagerAdapter(getFragmentManager());
         viewPager.setAdapter(pagerAdapter);
+
         TabLayout tabLayout = (TabLayout) view.findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
