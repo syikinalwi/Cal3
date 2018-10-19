@@ -29,8 +29,48 @@
             android:inputType="textPersonName" />
 
 
-<!--need to use snackbar  for the rest.. huhu-->
+        <!--need to use snackbar  for the rest.. huhu-->
     </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="147dp"
+        android:ems="10"
+        android:hint="+06 Contact Number"
+        android:inputType="phone" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="253dp">
+
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:ems="10"
+            android:hint="Address Line1"
+            android:inputType="textPersonName" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
 
     <Button
         android:id="@+id/button"
@@ -43,7 +83,4 @@
         android:layout_marginLeft="274dp"
         android:layout_marginTop="483dp"
         android:text="Add" />
-
-    <!--android:layout_below="@+id/editText"-->
-
 </RelativeLayout>
